@@ -1,9 +1,14 @@
+import { getAllJobs } from "@/actions/getJobs";
 import CardJob from "@/components/CardJob";
-import { jobPostings } from "@/lib/jodsData";
+import Error from "@/components/Error";
+import { JobPosting } from "@/types/JobPosting";
 import { ArrowDown } from "lucide-react";
 
-export default function Home() {
-
+export default async function Home() {
+  const {data:jobPostings, error}= await getAllJobs() 
+  if(error){
+    return<Error/>
+  }
   return (
     <div className="max-w-[1450px] m-auto h-screen px-5 ">
       <div className="mt-15 ">
@@ -23,7 +28,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-5 pb-30">
 
-          {jobPostings.map((jobPosting, i) => (
+          {jobPostings.map((jobPosting:JobPosting, i:number) => (
             <div key={i}>
               <CardJob jobPosting={jobPosting}/>
             </div>

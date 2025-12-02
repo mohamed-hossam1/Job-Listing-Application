@@ -1,14 +1,24 @@
-import { About } from "./About";
-import { IdealCandidate } from "./IdealCandidate";
-
 export interface JobPosting {
-  id: number
+  id: string
   title: string;
   description: string;
-  responsibilities: string[];
-  ideal_candidate: IdealCandidate;
-  when_where: string;
-  about: About;
+  responsibilities: string;
+  requirements: string;
+  idealCandidate: string;
+  categories: string[];
+  opType:string
+  startDate:string
+  endDate: string
+  deadline: string
+  location:string[]
+  requiredSkills:string[]
+  whenAndWhere: string;
+  createdBy:string
+  status:string
+  datePosted:string
+  orgName:string
+  orgEmail:string
+  orgPrimaryPhone:string
   company: string;
-  image: string;
+  logoUrl: string;
 }

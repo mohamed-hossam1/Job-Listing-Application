@@ -1,10 +1,14 @@
+import { getJob } from "@/actions/getJobs"
+import Error from "@/components/Error"
 import JobDetails from "@/components/JobDetails"
-import { jobPostings } from "@/lib/jodsData"
 
-export default async function page({params}:{params:Promise<{id:number}>}) {
+export default async function page({params}:{params:Promise<{id:string}>}) {
   const {id} = await params
   
-  const jobData = jobPostings.filter(jobPosting=>jobPosting.id==id)[0]
+  const {data:jobData, error} = await getJob(id)
+  if(error){
+      return<Error/>
+    }
   return (
     <div className="max-w-[1450px] m-auto h-screen px-5 mb-30">
       <div className="mt-15">
