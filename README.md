@@ -11,11 +11,11 @@
 1.  **Download or clone** this repository.
 
     ```bash
-    git clone https://github.com/mohamed-hossam1/task-6
+    git clone https://github.com/mohamed-hossam1/Job-Listing-Application.git
     ```
 
 2.  ```bash
-       cd task-6
+       cd Job-Listing-Application
        npm install
     ```
 
@@ -34,4 +34,5 @@
 * **CSS3** 
 * **Next JS** 
 * **type script** 
+* **axios** 
 
