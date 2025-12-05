@@ -3,6 +3,10 @@
 ![App Demo](./demo1.png)
 ![App Demo](./demo2.png)
 ![App Demo](./demo3.png)
+![App Demo](./demo4.png)
+![App Demo](./demo5.png)
+![App Demo](./demo6.png)
+![App Demo](./demo7.png)
 
 
 
