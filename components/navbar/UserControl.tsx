@@ -22,7 +22,7 @@ export default function UserControl() {
           <div className="hidden lg:flex">
             <Link
               href={ROUTES.SIGNUP}
-              className="border-2 rounded-xl py-2.5 px-4 bg-primary text-white hover:bg-primary-hover transition-all duration-300"
+              className="border-2 rounded-xl py-2.5 px-4 bg-primary-foreground text-white hover:bg-primary-hover transition-all duration-300"
             >
               Sign Up
             </Link>

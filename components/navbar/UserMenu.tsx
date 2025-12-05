@@ -29,7 +29,7 @@ export default function UserMenu({
           onClick={() => setOpen(!open)}
         >
           <div>{userData && <p>{userData.name}</p>}</div>
-          <div className="border-2 flex bg-primary items-center w-10 h-10 flex justify-center items-center rounded-full cursor-pointer border-primary transition-all duration-300">
+          <div className="border-2 flex bg-primary-foreground items-center w-10 h-10 flex justify-center items-center rounded-full cursor-pointer border-primary transition-all duration-300">
             {userData ? (
               <>
                 <p
